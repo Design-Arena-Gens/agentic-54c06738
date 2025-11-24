@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Хаски в снежном лесу</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <h1>Хаски в снежном лесу</h1>
+          <p>
+            Окунитесь в тишину северной зимы, где мягкий снег искрится на ветвях,
+            а любознательный хаски встречает рассвет среди сосен.
+          </p>
+          <a class="hero__cta" href="#gallery">Смотреть галерею</a>
+        </div>
+      </header>
+
+      <section class="section" id="gallery">
+        <h2>Зимняя Галерея</h2>
+        <p class="section__lead">
+          История озорного хаски, что живёт своим внутренним северным светом и
+          оставляет за собой узор снежных следов.
+        </p>
+        <div class="gallery">
+          <figure class="card">
+            <img
+              src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=80"
+              alt="Хаски на снегу"
+              loading="lazy"
+            />
+            <figcaption>Свежий снег скрипит под лапами.</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+              alt="Хаски в бору"
+              loading="lazy"
+            />
+            <figcaption>Лес стережёт секреты северного ветра.</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=1200&q=80"
+              alt="Хаски и закат"
+              loading="lazy"
+            />
+            <figcaption>Последние лучи заката зажигают янтарные глаза.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--story">
+        <div class="story">
+          <h2>Северная легенда</h2>
+          <p>
+            Говорят, что каждое утро этот хаски будит рассвет своим звонким
+            лаем, пробегая между вековыми кедрами и встряхивая снег, словно
+            искристую вуаль. Его шерсть словно впитывает сияние полярной ночи,
+            а взгляд отражает бескрайнюю тишину тайги.
+          </p>
+          <p>
+            Он ведёт уставших путников через метели и согревает их, пока за
+            горизонтом появится дрожащий свет северного солнца. Для кого-то он
+            — просто верный друг, а для кого-то — страж северного леса.
+          </p>
+        </div>
+        <div class="story__canvas">
+          <canvas id="aurora-canvas" width="640" height="400" aria-hidden="true"></canvas>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Создано с вдохновением полярной ночью.</p>
+      </footer>
+    </main>
+
+    <script type="module" src="scripts/aurora.js"></script>
+  </body>
+</html>
